@@ -17,8 +17,28 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
     </ul>
     </li>
   
+  <li>Cadastrar
+    
+    <ul>
+      <li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>add</i></b><br>os seguintes parâmetros deverão ser passados:
+          <ul>
+            <li>descontos</li>
+                <li>descricao</li>
+                <li>itens</li>
+                <li>nome</li>
+                <li>origem</li>
+                <li>preco</li>
+                <li>qtd</li>
+            </ul>
+        </li>
+    <li>Retorno:STRING com mensagem de confirmação !</li>
+    </ul>
+      
+  </li>
+  
+  <li>
   Editar:
-      <ul><li>Gerar requisição Http <b>POST</b> para as seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>edit</i></b><br>os seguintes parâmetros deverão ser passados:
+      <ul><li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>edit</i></b><br>os seguintes parâmetros deverão ser passados:
           <ul>
             <li>descontos</li>
                 <li>descricao</li>
@@ -30,7 +50,7 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
                 <li>qtd</li>
             </ul>
         </li>
-    <li>Retorno: OBJETO JSON com o produto cadastrado de acordo com o ID</li>
+    <li>Retorno: STRING com mensagem de confirmação !</li>
     </ul>
     </li>
   
