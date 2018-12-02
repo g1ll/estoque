@@ -1,0 +1,10 @@
+CREATE TABLE produto(
+    id BIGINT(20) UNSIGNED AUTO_INCREMENT NOT NULL ,
+    nome VARCHAR(200) NOT NULL,
+    descricao VARCHAR(3000) NOT NULL,
+    qtd INT(10) NOT NULL,
+    preco FLOAT(10,2) NOT NULL,
+    origem VARCHAR(100) NOT NULL,
+    descontos VARCHAR(500) NOT NULL,
+    itens VARCHAR(500) NOT NULL,    
+PRIMARY KEY (id) ) ENGINE = InnoDB;
