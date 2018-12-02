@@ -57,7 +57,7 @@ $config-&gt;dbdrive = &#39;mysql&#39;;</code></pre>
     </li>
     <li>
       Retornar Produto Único:
-      <ul><li>Gerar requisição Http GET para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>prodById</i></b>/<b><i>ID</i></b><br> o <b><i>ID</i></b> deverá ser passado na url depois do nome da classe AdminProd e do método <b><i>prodById</i></b>.
+      <ul><li>Gerar requisição Http GET para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>prodById</i></b>/<b><i>ID</i></b><br> o <b><i>ID</i></b> deverá ser passado na url depois do nome da classe AdminProd e do método <b><i>prodById</i></b> separados por <b>/</b>.
         </li>
     <li>Retorno: OBJETO JSON com o produto cadastrado de acordo com o ID</li>
     </ul>
