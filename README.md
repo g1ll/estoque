@@ -48,22 +48,22 @@ $config-&gt;dbdrive = &#39;mysql&#39;;</code></pre>
     </ul>
     </li>
 </ol>
-<h3>INSTRUÇÕES</h3>
+<h3>INSTRUÇÕES DE USO</h3>
 <ol>
-  <li>Listar : 
+  <li>Listar Produtos: 
     <ul><li>Gerar requisição Http GET para as seguintes URLS: <br>http://dominio/estoque/AdminProd/ ou http://dominio/estoque/AdminProd/listProds</li>
     <li>Retorno: ARRAY JSON com lista de produtos cadastrados</li>
     </ul>
     </li>
     <li>
-      Retornar Único:
+      Retornar Produto Único:
       <ul><li>Gerar requisição Http GET para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>prodById</i></b>/<b><i>ID</i></b><br> o <b><i>ID</i></b> deverá ser passado na url depois do nome da classe AdminProd e do método <b><i>prodById</i></b>.
         </li>
     <li>Retorno: OBJETO JSON com o produto cadastrado de acordo com o ID</li>
     </ul>
     </li>
   
-  <li>Cadastrar
+  <li>Cadastrar Produto:
     <ul>
       <li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>add</i></b><br>os seguintes parâmetros deverão ser passados:
           <ul>
@@ -82,7 +82,7 @@ $config-&gt;dbdrive = &#39;mysql&#39;;</code></pre>
   </li>
   
   <li>
-  Editar:
+  Editar Produto:
       <ul><li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>edit</i></b><br>os seguintes parâmetros deverão ser passados:
           <ul>
             <li>descontos</li>
@@ -101,7 +101,7 @@ $config-&gt;dbdrive = &#39;mysql&#39;;</code></pre>
   
   </li>
   <li>
-  Deletar:
+  Deletar Produto:
       <ul><li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>del</i></b><br>o ID deverá ser passado como parâmetro:
           <ul> <li>id</li>                
             </ul>
