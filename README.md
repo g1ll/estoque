@@ -30,7 +30,7 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
         &lt;IfModule !mod_rewrite.c&gt;
            ErrorDocument 404 /index.php
         &lt;/IfModule&gt; </code></pre>  
-      Trocar onde diz "estoque" para o caminho e pasta no servidor até a raiz do sistema.
+      Trocar onde diz "estoque" para o caminho e pasta no servidor onde o sistema foi extraído.
       </li>
       <li>Configure o arquivo <b><i>config.php</i></b>
           <pre><code> &lt;?php
