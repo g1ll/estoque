@@ -57,7 +57,6 @@ class Model  {
             }
             echo $exc->getMessage();
             die;
-            return array();
         } finally {
             if (isset($connection)) {
                 unset($connection);
