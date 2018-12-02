@@ -18,7 +18,6 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
     </li>
   
   <li>Cadastrar
-    
     <ul>
       <li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>add</i></b><br>os seguintes parâmetros deverão ser passados:
           <ul>
