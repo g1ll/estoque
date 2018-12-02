@@ -13,10 +13,9 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
    <li>Instalação:
             <ul>
                   <li>Apenas extraia para a pasta do servidor HTTP (Apache).</li>
-                   <li>Instalar o banco de dados de acordo com o arquivo <b><i>db_estoque.sql</i></b> na pasta </i>model<i></li>
+                   <li>Instalar o banco de dados de acordo com o arquivo <b><i>db_estoque.sql</i></b> na pasta <i>model</i></li>
             </ul>
        </li>
-  
   <li>Configuração:
     <ul>
       <li>Configure o arquivo <b><i>.htaccess</i></b>
