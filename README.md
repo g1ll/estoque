@@ -5,27 +5,47 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
 
 <h3>INSTALAÇÃO</h3>
 <ol>
-<li>Download:
-      <ul>
-        <li>Faça download do sistema ou clone através do repositório. Extraia para a pasta do servidor HTTP (Apache).</li>        </ul>
-  </li>
+  <li>Download:
+    <ul>
+      <li>Faça download do sistema ou clone através do repositório. </li>
+    </ul>
+</li>
+   <li>Instalação:
+            <ul>
+                  <li>Apenas extraia para a pasta do servidor HTTP (Apache).</li>
+                   <li>Instalar o banco de dados de acordo com o arquivo <b><i>db_estoque.sql</i></b> na pasta </i>model<i></li>
+            </ul>
+       </li>
+  
   <li>Configuração:
     <ul>
       <li>Configure o arquivo <b><i>.htaccess</i></b>
-        <IfModule mod_rewrite.c>
+      <pre><code>&lt;IfModule mod_rewrite.c&gt;
           RewriteEngine On
           RewriteBase /estoque/
           RewriteCond $1 !^(index\.php|images|assets|robots\.txt|bootstrap.min.css\.map)
           RewriteCond %{REQUEST_FILENAME} !-f
           RewriteCond %{REQUEST_FILENAME} !-d
           RewriteRule ^(.*)$ index.php?query=$1 [L]
-        </IfModule>
-        <IfModule !mod_rewrite.c>
+        &lt;/IfModule&gt;
+        &lt;IfModule !mod_rewrite.c&gt;
            ErrorDocument 404 /index.php
-        </IfModule> 
+        &lt;/IfModule&gt; </code></pre>  
       Trocar onde diz "estoque" para o caminho e pasta no servidor até a raiz do sistema.
       </li>
-      <li>Configure o arquivo <b><i>config.php</i></b></li>
+      <li>Configure o arquivo <b><i>config.php</i></b>
+          <pre><code> &lt;?php
+//Inicializa&#231;&#227;o da vari&#225;vel $config
+unset($config);
+$config = new stdClass();
+$config-&gt;defaultClass = &quot;AdminProd&quot;;
+//Database
+$config-&gt;dbuser = &#39;root&#39;;
+$config-&gt;dbpassword = &#39;&#39;;//modificar a senha caso seja necess&#225;rio
+$config-&gt;dbname = &#39;estoque&#39;;//nome do banco
+$config-&gt;dbhost = &#39;localhost&#39;;//nome do servidor
+$config-&gt;dbdrive = &#39;mysql&#39;;</code></pre>            
+          </li>
     </ul>
     </li>
 </ol>
