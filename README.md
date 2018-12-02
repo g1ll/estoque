@@ -54,7 +54,7 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
     </li>
   
   </li>
-  
+  <li>
   Deletar:
       <ul><li>Gerar requisição Http <b>POST</b> para a seguinte URL: <br>http://dominio/estoque/AdminProd/<b><i>del</i></b><br>o ID deverá ser passado como parâmetro:
           <ul> <li>id</li>                
