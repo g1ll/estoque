@@ -5,7 +5,7 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
 
 <h3>INSTALAÇÃO</h3>
 <ol>
-</li>
+<li>Download:
       <ul>
         <li>Faça download do sistema ou clone através do repositório. Extraia para a pasta do servidor HTTP (Apache).</li>        </ul>
   </li>
