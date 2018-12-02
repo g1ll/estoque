@@ -48,7 +48,7 @@ $config-&gt;dbdrive = &#39;mysql&#39;;</code></pre>
     </ul>
     </li>
 </ol>
-<h3>INSTRUÇÕES PARA O USAR O CRUD BACKEND</h3>
+<h3>INSTRUÇÕES</h3>
 <ol>
   <li>Listar : 
     <ul><li>Gerar requisição Http GET para as seguintes URLS: <br>http://dominio/estoque/AdminProd/ ou http://dominio/estoque/AdminProd/listProds</li>
