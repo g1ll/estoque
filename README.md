@@ -3,17 +3,15 @@ Backend em PHP do sistema de estoque de produtos para o trabalho de Ajax da disc
 
 O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Para interagir com o banco e usar o sistema através de requisições HTTP via Ajax siga as seguintes instruçes:
 
-###INSTALAÇÃO
-##Download:
+<h3>INSTALAÇÃO</h3>
+<ol>
+</li>
       <ul>
         <li>Faça download do sistema ou clone através do repositório. Extraia para a pasta do servidor HTTP (Apache).</li>        </ul>
   </li>
   <li>Configuração:
     <ul>
       <li>Configure o arquivo <b><i>.htaccess</i></b>
-        #sadfasdf
-        ```
-              
         <IfModule mod_rewrite.c>
           RewriteEngine On
           RewriteBase /estoque/
@@ -24,17 +22,13 @@ O sistema retorna os produtos cadastrados no banco de dados em formato JSON. Par
         </IfModule>
         <IfModule !mod_rewrite.c>
            ErrorDocument 404 /index.php
-        </IfModule>       
-    ```
-     #asdfasd
+        </IfModule> 
       Trocar onde diz "estoque" para o caminho e pasta no servidor até a raiz do sistema.
       </li>
       <li>Configure o arquivo <b><i>config.php</i></b></li>
     </ul>
     </li>
 </ol>
-
-
 <h3>INSTRUÇÕES PARA O USAR O CRUD BACKEND</h3>
 <ol>
   <li>Listar : 
